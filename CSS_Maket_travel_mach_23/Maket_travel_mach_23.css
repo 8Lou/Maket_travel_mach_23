@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    background: white;
+    left: 0;
+    right: 0;
+    transition: box-shadow, background-color .25s ease;
+    z-index: 1;
+    top: 0;
+}
+
+.header__logo {
+    height: 30px;
+}
+
+.background-image {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.footer {
+    margin: 90px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
