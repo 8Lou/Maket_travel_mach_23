@@ -1,35 +1,74 @@
+/* Убрать маркеры и подчеркивания */
+ul, ol{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(3, 26, 56);
+}
+
+/* Шапка */
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: sticky;
-    background: white;
-    left: 0;
-    right: 0;
-    transition: box-shadow, background-color .25s ease;
-    z-index: 1;
-    top: 0;
+    flex-direction: row;
+    height: 110px;
 }
 
-.header__logo {
-    height: 30px;
-}
-
-.background-image {
+nav {
     display: flex;
-    align-items: center;
-    background-size: cover;
-    flex-shrink: 0;
+    flex-direction: row;
+    width: 100%; /* блок по ширине окна */
+    justify-content: space-around; /* меню по всей ширине окна */
+    align-items: center; /* по центру высоты меню (горизонтали) */
 }
 
-.footer {
-    margin: 90px 20px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.footer__container {
+.nav-list {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around; /* меню по всей ширине окна */
+    align-items: center; /* по центру высоты меню (горизонтали) */
+    margin: 0; /* этим обнуляем стиль браузера по умолчанию */
+    padding: 0;
 }
+
+.nav-list-item {
+    padding: 0 25px; /* расстояние между ссылками в меню шапки */
+    font-size: 14px;
+}
+
+.banner {
+    background-image: url('../img/Rectangle33.png');
+    background-repeat: no-repeat; /* не повторяться */
+    background-size: cover; /* на всю ширину окна */
+    height: 850px; /* высота блока */
+    display: flex; /* центрировать по горизонтали */
+    align-items: center; /* центрировать по горизонтали */
+}
+
+.banner-content {
+color: azure;
+background-color: rgba(52, 198, 189, 0.5); /* фон текста банера */
+}
+
+.banner-content-title {
+font-family: 'Spectral';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 42px;
+text-align: center;
+}
+
+.banner-content-text {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 30px;
+text-align: center;
+}
+/* 
+.about {
+    background-image: url('../img/Rectangle\ 14.png');
+} */
