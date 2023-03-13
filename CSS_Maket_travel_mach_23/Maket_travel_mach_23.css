@@ -1,4 +1,13 @@
-/* Убрать маркеры и подчеркивания */
+/* установить шрифты на странице *//* Убрать маркеры и подчеркивания */
+@font-face {
+    font-family: 'Spectral';
+    src: url(../Fonts/Spectral-Bold.ttf) format(truetype);
+    font-family: 'Open Sans';
+    src: url(../Fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-style: normal;
+}
+
+
 ul, ol{
     list-style-type: none;
 }
@@ -13,6 +22,7 @@ a {
     display: flex;
     flex-direction: row;
     height: 110px;
+    font-family: 'Open Sans';
 }
 
 nav {
@@ -41,19 +51,20 @@ nav {
     background-image: url('../img/Rectangle33.png');
     background-repeat: no-repeat; /* не повторяться */
     background-size: cover; /* на всю ширину окна */
-    height: 850px; /* высота блока */
+    height: 900px; /* высота блока */
     display: flex; /* центрировать по горизонтали */
     align-items: center; /* центрировать по горизонтали */
 }
 
 .banner-content {
 color: azure;
+width: 100%; /* на всю ширину окна */
 background-color: rgba(52, 198, 189, 0.5); /* фон текста банера */
 }
 
 .banner-content-title {
 font-family: 'Spectral';
-font-style: normal;
+/* font-style: normal; */
 font-weight: 700;
 font-size: 40px;
 line-height: 42px;
@@ -62,13 +73,62 @@ text-align: center;
 
 .banner-content-text {
 font-family: 'Open Sans';
-font-style: normal;
+/* font-style: normal; */
 font-weight: 400;
 font-size: 22px;
 line-height: 30px;
 text-align: center;
 }
-/* 
+
 .about {
-    background-image: url('../img/Rectangle\ 14.png');
-} */
+    background-image: url('../img/Group5.png');
+/*     background-repeat: no-repeat; */
+}
+
+.about-container {
+    height: 360px;
+    padding: 145px 250px 172px 270px;
+    display: flex;
+}
+
+.about-title {
+font-family: 'Spectral';
+/* font-style: normal; */
+font-weight: 700;
+font-size: 40px;
+line-height: 73px;
+color: #312c31;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-content-text {
+    font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: justify;
+        color: #896f58;
+        background-color: white;
+        padding: 34px 34px 54px 30px; /* поля блока с текстом */
+        width: 546px;
+        height: 124px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* тень блока с текстом */
+        border-radius: 4px;
+        z-index: 998; /* положение ближе к зрителю */
+        margin-left: -50px; /* наезд блока с текстом на пикчу */
+        margin-top: ;
+}
+
+.about-content-img {
+    /* z-index: 999; */
+    margin-top: -35;
+    margin-left: 20;
+}
+
+.about-content-link {
+
+}
